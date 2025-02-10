@@ -1,0 +1,201 @@
+<footer class="footer">
+  <div class="container">
+    <p>Footer</p>
+  </div>
+</footer>
+
+  <!-- to-top .up -->
+  <!-- 
+  <div class="fixed hidden-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-11"></div>
+        <div class="col-md-1">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed hidden-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-11"></div>
+        <div class="col-md-1">
+          <div class="up"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+
+  <div class="burger-menu-wrapper">
+    <div class="burger-menu">
+      <span class="span"></span>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu">
+    <ul class="menu">
+      <li class="menu__item text-bold first-item">
+        <a class="city-phone" href="tel:+73513571323">+7 (3513) 57-13-23</a>
+      </li>
+      <li class="menu__item second-item">
+        <a class="mobile-phone" href="tel:+79000861323">+79000861323</a>
+      </li>
+      <li class="menu__item text-bold">
+        <a href="tour3d.html" target="_blank">3D тур</a>
+      </li>
+      <li class="menu__item">
+        <a href="/#about">О комплексе</a>
+      </li>
+      <li class="menu__item">
+        <a href="/#rooms">Номера</a>
+      </li>
+      <li class="menu__item">
+        <a href="/#contacts">Контакты</a>
+      </li>
+      <li class="menu__item">
+        <a href="pay.html">Оплата</a>
+      </li>
+    </ul>
+    <div class="corner-up"></div>
+  </div>
+
+  <!-- modal header booking -->
+  <!-- 
+  <div id="modal-header-booking" class="modal">
+    <div class="modal-area">
+      <div class="modal-close">
+        <div class="close-in-round">
+          <div class="close"></div>
+        </div>
+      </div>
+      <p class="title">Форма бронирования</p>
+      <form id="mhb-form" method="post" action="/phpmailer/mailer.php">
+        <input type="text" class="input-field js-required-name" name="name" maxlength="32" placeholder="ИМЯ*" required>
+        <input type="text" class="input-field js-required-phone js-input-phone-mask" name="phone" id="mhb-phone" placeholder="+7 (000) 000-00-00*" required>
+        <input type="email" class="input-field" name="email" placeholder="E-mail" maxlength="50">
+        <input type="hidden" id="mhb-rooms-select" name="rooms-select" value="">
+        <input type="hidden" id="mhb-in-select" name="in-select" value="">
+        <input type="hidden" id="mhb-out-select" name="out-select" value="">
+        <input type="hidden" id="mhb-quantity" name="quantity" value="">
+        <div class="transfer">
+          <p>Трансфер</p>
+          <input type="radio" id="mhb-radio-yes" name="transfer-radio" class="custom-checkbox" value="Да">
+          <label for="mhb-radio-yes" class="custom-checkbox-label"></label>
+          <span class="span-yes">Да</span>
+          <input type="radio" id="mhb-radio-no" name="transfer-radio" class="custom-checkbox" value="Нет" checked>
+          <label for="mhb-radio-no" class="custom-checkbox-label"></label>
+          <span>Нет</span>
+        </div>
+        <p class="required-fields">* обязательные поля</p>
+        <p class="agreement-text">
+          <input type="checkbox" name="checkbox" class="custom-checkbox" id="mhb-checkbox-form" checked onchange="document.getElementById('mhb-submit').disabled = !this.checked;">
+          <label for="mhb-checkbox-form" class="custom-checkbox-label"></label>
+          <span>Я согласен с <a href="privacy-policy.html">политикой конфиденциальности</a></span>
+        </p>
+        <input type="submit" id="mhb-submit" value="Забронировать">
+      </form>
+    </div>
+  </div>
+   -->
+
+  <!-- modal rooms booking -->
+  <!-- 
+  <div id="modal-rooms-booking" class="modal">
+    <div class="modal-area">
+      <div class="modal-close">
+        <div class="close-in-round">
+          <div class="close"></div>
+        </div>
+      </div>
+      <p class="title">Форма бронирования</p>
+      <form id="mrb-form" method="post" action="/phpmailer/mailer.php">
+        <div class="input-container">
+          <select id="mrb-rooms-select" name="rooms-select" class="select rooms-select" required>
+            <option value="" disabled>Номер</option>
+            <option value="Однокомнатный (1 односпальная)">Однокомнатный (1 односпальная)</option>
+            <option value="Однокомнатный (2 односпальные)">Однокомнатный (2 односпальные)</option>
+            <option value="Двухкомнатный">Двухкомнатный</option>
+            <option value="Джуниор Сюит (2 кровати)">Джуниор Сюит (2 кровати)</option>
+            <option value="Люкс Симонов">Люкс "Симонов"</option>
+            <option value="Люкс Екатерина">Люкс "Екатерина"</option>
+          </select>
+          <span class="input-arrow select-arrow"></span>
+        </div>
+        <div class="input-container">
+          <input id="mrb-in-select" name="in-select" class="select in-select air-datepicker" placeholder="Заезд" required>
+          <label for="mrb-in-select" class="input-arrow"></label>
+        </div>
+        <div class="input-container">
+          <input id="mrb-out-select" name="out-select" class="select out-select air-datepicker" placeholder="Выезд" required>
+          <label for="mrb-out-select" class="input-arrow"></label>
+        </div>
+        <div class="quantity-select">
+          <span class="guest">Гости</span>
+          <input type="button" class="symbol quantity-minus" value="-">
+          <input class="quantity" type="number" name="quantity" max="10" min="1" step="1" value="1">
+          <input type="button" class="symbol quantity-plus" value="+">
+        </div>
+        <input type="text" class="input-field js-required-name" name="name" maxlength="32" placeholder="ИМЯ*" required>
+        <input type="text" class="input-field js-required-phone js-input-phone-mask" name="phone" id="mrb-phone" placeholder="+7 (000) 000-00-00*" required>
+        <input type="email" class="input-field" name="email" placeholder="E-mail" maxlength="50">
+        <div class="transfer">
+          <p>Трансфер</p>
+          <input type="radio" id="mrb-radio-yes" name="transfer-radio" class="custom-checkbox" value="Да">
+          <label for="mrb-radio-yes" class="custom-checkbox-label"></label>
+          <span class="span-yes">Да</span>
+          <input type="radio" id="mrb-radio-no" name="transfer-radio" class="custom-checkbox" value="Нет" checked>
+          <label for="mrb-radio-no" class="custom-checkbox-label"></label>
+          <span>Нет</span>
+        </div>
+        <p class="required-fields">* обязательные поля</p>
+        <p class="agreement-text">
+          <input type="checkbox" name="checkbox" class="custom-checkbox" id="mrb-checkbox-form" checked onchange="document.getElementById('mrb-submit').disabled = !this.checked;">
+          <label for="mrb-checkbox-form" class="custom-checkbox-label"></label>
+          <span>Я согласен с <a href="privacy-policy.html">политикой конфиденциальности</a></span>
+        </p>
+        <input type="submit" id="mrb-submit" value="Отправить">
+      </form>
+    </div>
+  </div>
+   -->
+
+  <!-- modal feedback -->
+  <!-- 
+  <div id="modal-feedback" class="modal">
+    <div class="modal-area">
+      <div class="modal-close">
+        <div class="close-in-round">
+          <div class="close"></div>
+        </div>
+      </div>
+      <p class="title">Связаться с нами</p>
+      <form id="mf-form" class="form" method="post" action="/phpmailer/mailer-feedback.php">
+        <input type="text" name="name" class="input-field js-required-name"  minlenght="3" maxlength="32" placeholder="ИМЯ*" required>
+        <input type="text" name="phone" class="input-field js-required-phone js-input-phone-mask"  placeholder="+7 (000) 000-00-00*" required>
+        <input type="email" name="email" class="input-field" placeholder="E-mail" maxlength="50">
+        <p class="required-fields">* обязательные поля</p>
+        <p class="agreement-text">
+          <input type="checkbox" name="checkbox" class="custom-checkbox js-required-checkbox" id="mf-checkbox-form" required checked onchange="document.getElementById('mf-submit').disabled = !this.checked;">
+          <label for="mf-checkbox-form" class="custom-checkbox-label"></label>
+          <span>Я согласен с <a href="privacy-policy.html">политикой конфиденциальности</a></span>
+        </p>
+        <input type="button" id="mf-submit" class="mf-submit" value="Отправить">
+      </form>
+    </div>
+  </div>
+   -->
+
+  <div id="cookie_note" class="we-use-cookie">
+    <div class="we-use-cookie-wrapper">
+      <div class="we-use-cookie-text">Этот сайт использует cookie-файлы и другие технологии для улучшения его работы. Продолжая работу с сайтом, вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках Вашего браузера.</div>
+      <button id="cookie_accept" class="we-use-cookie-close">ОК</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

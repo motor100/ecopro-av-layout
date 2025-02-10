@@ -1,0 +1,10 @@
+# 404 page
+ErrorDocument 404 /404.html
+# UTF-8
+AddDefaultCharset UTF-8
+
+#AddType text/html .html
+#AddType text/html .shtml
+AddHandler server-parsed .html
+AddHandler server-parsed .shtml
+#AddHandler server-parsed .htm
