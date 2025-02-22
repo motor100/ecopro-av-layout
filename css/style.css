@@ -38,7 +38,9 @@
   --text-color: #262626;
   --violet-color: #5929CA;
   --blue-color: #8193ED;
+  --white-color: #fff;
   --violer-tr-10-color: rgba(89, 41, 202, .1);
+  --violer-tr-20-color: rgba(89, 41, 202, .2);
   --margin-120: 120px;
 }
 
@@ -123,6 +125,93 @@ iframe {
   font-family: 'Raleway-SemiBold';
   font-size: 64px;
 }
+
+/* header */
+.header {
+  padding: 26px 0 0 0;
+}
+.header .flex-container {
+  display: flex;
+  padding: 0 0 18px 0;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid #E4EAF4;
+}
+.header .logo {
+  width: 188px;
+}
+.header .logo img {
+  width: 100%;
+}
+.header .catalog-btn {
+  display: flex;
+  width: 218px;
+  height: 68px;
+  border-radius: 34px;
+  background-color: var(--violet-color);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.header .catalog-btn .catalog-btn__text {
+  font-family: 'Raleway-Medium';
+  font-size: 24px;
+  color: var(--white-color);
+}
+.header .catalog-btn .catalog-btn__image {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.header .search-form {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+}
+.header .search-form .search-input {
+  display: block;
+  width: 100%;
+  height: 68px;
+  padding: 24px 30px;
+  border: 1px solid var(--violer-tr-20-color);
+  border-radius: 34px;
+  background-color: var(--violer-tr-10-color);
+  font-family: 'Raleway-Regular';
+  font-size: 18px;
+}
+.header .search-form .search-input:placeholder {
+  color: #B3B3B3;
+}
+.header .search-form .search-submit-btn {
+  display: block;
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--white-color);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.header .search-form .search-submit-btn img {
+  width: 100%;
+}
+.header .header-contacts {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.header .header-contacts .tp-item {
+  display: block;
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.header .header-contacts .tp-item img {
+  width: 100%;
+}
+
 
 /* temp */
 .grey-bg {
