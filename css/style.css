@@ -114,9 +114,9 @@ iframe {
   height: 100%;
   z-index: 1;
 }
-/*.terracota-color {
-  color: var(--terracota-color);
-}*/
+.violet-color {
+  color: var(--violet-color);
+}
 .section {
   margin: 0 0 var(--margin-120) 0;
 }
@@ -138,7 +138,9 @@ iframe {
   border-bottom: 1px solid #E4EAF4;
 }
 .header .logo {
+  display: block;
   width: 188px;
+  height: 68px;
 }
 .header .logo img {
   width: 100%;
@@ -211,6 +213,108 @@ iframe {
 .header .header-contacts .tp-item img {
   width: 100%;
 }
+
+/* main section */
+.main-section {
+  padding-top: 30px;
+}
+.main-section .main-banner-text {
+  width: 360px;
+}
+.main-section .main-banner {
+  height: 400px;
+  padding: 50px 60px;
+  border-radius: 30px;
+  background-color: var(--violet-color);
+}
+.main-section .main-banner-title {
+  font-family: 'Raleway-Medium';
+  font-size: 48px;
+  color: var(--white-color);
+  line-height: 1.1;
+}
+.main-section .main-banner-subtitle {
+  font-size: 28px;
+  color: var(--white-color);
+}
+.main-section .catalog-btn {
+  display: flex;
+  width: 341px;
+  height: 68px;
+  border-radius: 34px;
+  background-color: var(--white-color);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .catalog-btn .catalog-btn__text {
+  font-family: 'Raleway-Medium';
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+/* about section */
+.about-section .grid-container {
+  display: grid;
+  margin: 0 0 25px 0;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-section .about-description {
+  font-family: 'Raleway-SemiBold';
+  font-size: 42px;
+  line-height: 1.1;
+}
+.about-section .about-info {
+  display: grid;
+  gap: 20px 24px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.about-section .about-info .about-rectangle {
+  height: 170px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: var(--violet-color);
+}
+.about-section .about-info .about-rectangle-violet {
+  background-color: var(--violet-color);
+}
+.about-section .about-info .about-rectangle-pink {
+  background-color: #9729CA;
+}
+.about-section .about-info .about-rectangle .about-rectangle__number {
+  margin: 0 0 10px 0;
+  font-family: 'Raleway-SemiBold';
+  font-size: 42px;
+  color: var(--white-color);
+  line-height: 1.1;
+}
+.about-section .about-info .about-rectangle .about-rectangle__title {
+  font-size: 24px;
+  color: var(--white-color);
+  line-height: 1.1;
+}
+.about-section .about-btn {
+  display: flex;
+  width: 256px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--violet-color);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.about-section .about-btn .about-btn__text {
+  font-family: 'Raleway-Medium';
+  font-size: 24px;
+  color: var(--white-color);
+}
+.about-section .about-btn .about-btn__image {
+  width: 28px;
+  flex-shrink: 0;
+}
+
 
 
 /* temp */
