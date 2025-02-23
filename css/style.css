@@ -40,7 +40,8 @@
   --blue-color: #8193ED;
   --white-color: #fff;
   --pink-color: #9729CA;
-  --violer-tr-10-color: rgba(89, 41, 202, .1);
+  --placeholder-color: #B3B3B3;
+  --violer-tr-10-color: rgba(89, 41, 202, .1); /* он же #E3E3FF */
   --violer-tr-20-color: rgba(89, 41, 202, .2);
   --margin-120: 120px;
 }
@@ -125,6 +126,7 @@ iframe {
   margin: 0 0 40px 0;
   font-family: 'Raleway-SemiBold';
   font-size: 64px;
+  line-height: 1.3;
 }
 
 /* header */
@@ -183,7 +185,7 @@ iframe {
   font-size: 18px;
 }
 .header .search-form .search-input:placeholder {
-  color: #B3B3B3;
+  color: var(--placeholder-color);
 }
 .header .search-form .search-submit-btn {
   display: block;
@@ -425,6 +427,110 @@ iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* callback dealer section */
+.callback-dealer-section .callback-dealer {
+  padding: 60px;
+  background-color: var(--violer-tr-10-color);
+  border-radius: 30px;;
+}
+.callback-dealer-section .section-title {
+  margin-bottom: 20px;
+}
+.callback-dealer-section .callback-dealer__description {
+  margin: 0 0 60px 0;
+  font-size: 18px;
+}
+.callback-dealer-section .flex-container {
+  display: flex;
+  gap: 50px;
+}
+.callback-dealer-section .callback-dealer-form {
+  width: 100%;
+}
+.callback-dealer-section .callback-dealer-form .form-flex-container {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+.callback-dealer-section .callback-dealer-form .left,
+.callback-dealer-section .callback-dealer-form .right {
+  width: 100%;
+}
+.callback-dealer-section .callback-dealer-form .input-field {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Raleway-Regular';
+  font-size: 18px;
+}
+.callback-dealer-section .callback-dealer-form .mb-20 {
+  margin: 0 0 20px 0;
+}
+.callback-dealer-section .callback-dealer-form .mb-40 {
+  margin: 0 0 40px 0;
+}
+.callback-dealer-section .callback-dealer-form .input-field:placeholder {
+  color: var(--placeholder-color);
+}
+.callback-dealer-section .callback-dealer-form .callback-dealer-btn {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 0 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--violet-color);
+  align-items: center;
+  justify-content: space-between;
+}
+.callback-dealer-section .callback-dealer-form .callback-dealer-btn .callback-dealer-btn__text {
+  font-family: 'Raleway-Medium';
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+
+/* agreement text галочка соглашения */
+.agreement-text {
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.agreement-text a {
+  font-size: 14px;
+  color: var(--violet-color);
+  text-decoration: underline;
+}
+.agreement-text .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.agreement-text .custom-checkbox+label:before {
+  content: '';
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 0 0;
+  border: 1px solid var(--violer-tr-10-color);
+  border-radius: 5px;
+  background-color: var(--violer-tr-10-color);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 60%;
+  background-color: #fff;
+}
+.agreement-text .custom-checkbox:checked+label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%235929CA' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.agreement-text .custom-checkbox-label {
+  display: block;
 }
 
 
@@ -697,44 +803,7 @@ iframe {
 
 
 
-/* agreement text галочка соглашения */
-.agreement-text {
-  margin: 15px 0;
-  font-size: 14px;
-  line-height: 1.6;
-}
-.agreement-text a {
-  font-size: 14px;
-  color: var(--text-color);
-}
-.agreement-text .custom-checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-.agreement-text .custom-checkbox+label:before {
-  content: '';
-  display: block;
-  float: left;
-  width: 13px;
-  height: 13px;
-  border: 1px solid var(--text-color);
-  margin: 3px 10px 3px 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 80%;
-  background-color: #fff;
-}
-.agreement-text .custom-checkbox:checked+label::before {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-}
-.agreement-text .custom-checkbox-label {
-  display: block;
-}
-.agreement-text a {
-  font-size: 14px;
-  text-decoration: underline;
-}
+
 
 
 /* burger menu */
