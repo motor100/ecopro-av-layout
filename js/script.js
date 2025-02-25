@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   */
 
+  // Current year
+  const now = new Date();
+  const year = now.getFullYear();
+
+  const currentYear = document.getElementById('current-year');
+  currentYear.innerText = year;
+
 
   // Mobile menu
   const body = document.querySelector('body');
