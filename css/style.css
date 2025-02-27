@@ -33,6 +33,34 @@
   font-weight: 400;
   src: url(../fonts/Raleway-Bold.woff2) format("woff2");
 }
+@font-face {
+  font-display: swap;
+  font-family: 'InterDisplay-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/InterDisplay-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'InterDisplay-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/InterDisplay-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'InterDisplay-SemiBold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/InterDisplay-SemiBold.woff2) format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: 'InterDisplay-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/InterDisplay-Light.woff2) format("woff2");
+}
 
 :root {
   --text-color: #262626;
@@ -217,6 +245,12 @@ iframe {
   width: 100%;
 }
 
+
+
+
+
+
+
 /* main section */
 .main-section {
   padding-top: 30px;
@@ -281,14 +315,14 @@ iframe {
   background-color: var(--violet-color);
 }
 .about-section .about-info .about-rectangle-violet {
-  background-color: var(--violet-color);
+  background: linear-gradient(130deg, var(--violet-color) 13.3%, var(--blue-color) 89.1%);
 }
 .about-section .about-info .about-rectangle-pink {
-  background-color: var(--pink-color);
+  background: linear-gradient(130deg, #EEB9A6 13.3%, #9729CA 89.1%);
 }
 .about-section .about-info .about-rectangle .about-rectangle__number {
   margin: 0 0 10px 0;
-  font-family: 'Raleway-SemiBold';
+  font-family: 'InterDisplay-SemiBold';
   font-size: 42px;
   color: var(--white-color);
   line-height: 1.1;
@@ -303,7 +337,7 @@ iframe {
   width: 256px;
   height: 60px;
   border-radius: 30px;
-  background-color: var(--violet-color);
+  background: linear-gradient(130deg, var(--violet-color) 13.3%, var(--blue-color) 89.1%);
   gap: 10px;
   align-items: center;
   justify-content: center;
@@ -369,13 +403,13 @@ iframe {
   line-height: 1.2;
 }
 .complex-solutions-section .solutions-item-violet {
-  background-color: var(--violet-color);
+  background: linear-gradient(130deg, var(--violet-color) 13.3%, var(--blue-color) 89.1%);
 }
 .complex-solutions-section .solutions-item-black {
   background-color: var(--text-color);
 }
 .complex-solutions-section .solutions-item-pink {
-  background-color: var(--pink-color);
+  background: linear-gradient(130deg, #EEB9A6 13.3%, #9729CA 89.1%);
 }
 .complex-solutions-section .solutions-item-wide .solutions-btn {
   display: flex;
@@ -468,6 +502,9 @@ iframe {
   font-family: 'Raleway-Regular';
   font-size: 18px;
 }
+.callback-dealer-section .callback-dealer-form .input-phone {
+  font-family: 'InterDisplay-Light';
+}
 .callback-dealer-section .callback-dealer-form .mb-20 {
   margin: 0 0 20px 0;
 }
@@ -484,7 +521,7 @@ iframe {
   padding: 0 40px;
   border: none;
   border-radius: 30px;
-  background-color: var(--violet-color);
+  background: linear-gradient(130deg, var(--violet-color) 13.3%, var(--blue-color) 89.1%);
   align-items: center;
   justify-content: space-between;
 }
@@ -572,7 +609,7 @@ iframe {
   height: 41px;
   border-radius: 15px;
   background-color: var(--white-color);
-  font-size: 18px;
+  font-family: 'InterDisplay-Light';
   gap: 10px;
   z-index: 3;
   align-items: center;
@@ -705,12 +742,17 @@ iframe {
 .category-section .item12 { grid-area: M; }
 
 
+
+
+
+
+
 /* footer */
 .footer {
   padding: 60px 0 40px 0;
   margin-top: var(--margin-120);
   border-radius: 30px 30px 0 0;
-  background-color: var(--violet-color);
+  background: linear-gradient(130deg, var(--violet-color) 13.3%, var(--blue-color) 89.1%);
   color: var(--white-color);
 }
 .footer .footer-logo {
@@ -765,7 +807,7 @@ iframe {
 }
 .footer .footer-menu .address-wrapper .phone,
 .footer .footer-menu .address-wrapper .address {
-  font-family: 'Raleway-SemiBold';
+  font-family: 'InterDisplay-Medium';
   font-size: 28px;
 }
 .footer .footer-text  {
