@@ -590,7 +590,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(130deg, rgba(251, 194, 235, 0.40) 13.3%, rgba(166, 193, 238, 0.40) 89.1%);
+  background: linear-gradient(0deg, rgba(34, 77, 143, 0.40) 0%, rgba(34, 77, 143, 0.40) 100%);
   z-index: 2;
 }
 .news-section .news-item .news-item__date {
@@ -670,6 +670,8 @@ iframe {
 }
 
 /* Events section */
+/* Grid */
+/*
 .events-section .grid-container {
   display: grid;
   gap: 24px;
@@ -694,9 +696,49 @@ iframe {
   height: 280px;
   grid-area: D;
 }
+*/
 
-/* footer */
-
+/* Events section */
+.events-section .events {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.events-section .events-item {
+  position: relative;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.events-section .events-item .events-item__title {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: auto;
+  padding: 0 30px;
+  font-family: 'Roboto-Medium';
+  font-size: 32px;
+  color: var(--white-color);
+  line-height: 1.1;  
+  z-index: 2;
+}
+.events-section .events-item .events-item__image {
+  height: 100%;
+}
+.events-section .events-item .events-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.events-section .events-item .events-item__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(34, 77, 143, 0.40) 0%, rgba(34, 77, 143, 0.40) 100%);
+  z-index: 1;
+}
 
 /* Categories Home page and Catalog page */
 .categories {
@@ -792,10 +834,6 @@ iframe {
 .category-section .item11 { grid-area: L; }
 .category-section .item12 { grid-area: M; }
 */
-
-
-
-
 
 
 
