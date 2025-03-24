@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  // Top menu item set active
+  const topMenuItemLink = document.querySelectorAll('.top-menu .menu-item__link');
+
+  if (typeof(topMenuItemActive) != "undefined" && topMenuItemActive !== null) {
+    topMenuItemLink[topMenuItemActive].classList.add('active');
+  }
 
   // Swiper slider
   /*
