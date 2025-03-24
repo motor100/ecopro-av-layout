@@ -835,6 +835,41 @@ iframe {
 .category-section .item12 { grid-area: M; }
 */
 
+/* Manufacturers page */
+.manufacturers-page .manufacturers {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+.manufacturers-page .manufacturers-item {
+  padding: 60px;
+  border-radius: 30px;
+  background-color: var(--lightgrey-color);
+}
+.manufacturers-page .manufacturers-item__logo {
+  width: 180px;
+  height: 100px;
+}
+.manufacturers-page .manufacturers-item__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.manufacturers-page .manufacturers-item__text {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+.manufacturers-page .manufacturers-item__link {
+  text-align: right;
+}
+.manufacturers-page .manufacturers-item__link .link {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+
+
+
 
 
 /* footer */
