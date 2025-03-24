@@ -698,54 +698,80 @@ iframe {
 /* footer */
 
 
-/* Catalog page */
-.catalog-page .categories {
+/* Categories Home page and Catalog page */
+.categories {
   display: flex;
   flex-wrap: wrap;
   gap: 32px 0;
   justify-content: space-between;
 }
-.catalog-page .categories-item {
+.categories-item {
   position: relative;
   width: 23.5%;
   height: 320px;
   border-radius: 30px;
+  overflow: hidden;
+}
+.categories-item-wide {
+  width: 49%;
   background-color: var(--blue-color);
 }
-.catalog-page .categories-item-wide {
-  width: 49%;
+.categories-item-blue {
+  background-color: var(--blue-color);
 }
-.catalog-page .categories-item .circle-right-down {
+.categories-item-black {
+  background-color: var(--text-color);
+}
+.categories-item .circle-right-down {
   position: absolute;
   top: 20px;
   right: 30px;
+  width: 48px;
+  height: 48px;
+  z-index: 3;
 }
-.catalog-page .categories-item .categories-item__title {
+.categories-item .categories-item__title {
   position: absolute;
   left: 0;
   bottom: 30px;
-  display: block;
   width: auto;
   padding: 0 30px;
   font-family: 'Roboto-Medium';
   font-size: 28px;
   color: var(--white-color);
-  line-height: 1.1;
+  line-height: 1.0;
+  z-index: 2;
+}
+.categories-item__image {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+.categories-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.categories-item-square .categories-item__image {
+  left: 0;
+  width: 254px;
+  height: 216px;
+}
+.categories-item-wide .categories-item__image {
+  right: 0;
+  width: 410px;
+  height: 300px;
+}
+.categories-item .full-link {
+  z-index: 4;
 }
 
-
-
-/* temp */
-.grey-bg {
-  height: 320px;
-  background-color: grey;
-}
 
 /* category section */
+/* верстка grid */
+/*
 .category-section .grid-container {
   display: grid;
-/*    grid-template-columns: 1fr 1fr 2fr;*/
-/*    grid-template-rows: repeat(2, 1fr);*/
   gap: 24px;
   grid-template-areas:
     "A A A B B B  C C C C C C"
@@ -765,6 +791,7 @@ iframe {
 .category-section .item10 { grid-area: K; }
 .category-section .item11 { grid-area: L; }
 .category-section .item12 { grid-area: M; }
+*/
 
 
 
