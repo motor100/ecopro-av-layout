@@ -562,11 +562,11 @@ iframe {
   display: block;
 }
 
-/* News section */
+/* News section Home page and News page */
 .news-section .news {
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
+  display: grid;
+  gap: 35px 24px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .news-section .news-item .news-item__content {
   position: relative;
@@ -644,29 +644,47 @@ iframe {
   bottom: 30px;
   right: 30px;
   display: flex;
-  width: 285px;
-  height: 68px;
+  width: 235px;
+  height: 60px;
   border-radius: 34px;
   background-color: var(--white-color);
   z-index: 3;
   gap: 10px;
   align-items: center;
   justify-content: center;
+  transition: background-color .2s;
 }
 .news-section .news-item .news-item__btn .news-item__text {
   font-family: 'Roboto-Medium';
   font-size: 18px;
   color: var(--text-color);
+  transition: color .2s;
 }
 .news-section .news-item .news-item__btn .news-item__image {
   width: 36px;
   height: 36px;
   flex-shrink: 0;
+  transition: transform .2s;
+}
+.news-section .news-item .news-item__btn:hover {
+  background-color: var(--blue-color);
+}
+.news-section .news-item .news-item__btn:hover .news-item__text {
+  color: var(--white-color);
+}
+.news-section .news-item .news-item__btn:hover .news-item__image {
+  transform: rotate(-45deg);
 }
 .news-section .news-item .news-item__title {
+  display: -webkit-box;
+  height: 63px;
   font-family: 'Roboto-Medium';
-  font-size: 28px;
-  line-height: 1.3;
+  font-size: 24px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /* Events section */
@@ -700,9 +718,9 @@ iframe {
 
 /* Events section */
 .events-section .events {
-  display: flex;
+  display: grid;
   gap: 24px;
-  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
 }
 .events-section .events-item {
   position: relative;
@@ -714,13 +732,19 @@ iframe {
   position: absolute;
   top: 30px;
   left: 0;
+  display: -webkit-box;
   width: auto;
+  height: 62px;
   padding: 0 30px;
   font-family: 'Roboto-Medium';
-  font-size: 32px;
+  font-size: 28px;
   color: var(--white-color);
   line-height: 1.1;  
   z-index: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .events-section .events-item .events-item__image {
   height: 100%;
@@ -740,31 +764,31 @@ iframe {
   z-index: 1;
 }
 
-/* Categories Home page and Catalog page */
-.categories {
+/* Category section Categories Home page and Catalog page */
+.category-section .categories {
   display: flex;
   flex-wrap: wrap;
   gap: 32px 0;
   justify-content: space-between;
 }
-.categories-item {
+.category-section .categories-item {
   position: relative;
   width: 23.5%;
   height: 320px;
   border-radius: 30px;
   overflow: hidden;
 }
-.categories-item-wide {
+.category-section .categories-item-wide {
   width: 49%;
   background-color: var(--blue-color);
 }
-.categories-item-blue {
+.category-section .categories-item-blue {
   background-color: var(--blue-color);
 }
-.categories-item-black {
+.category-section .categories-item-black {
   background-color: var(--text-color);
 }
-.categories-item .circle-right-down {
+.category-section .categories-item .circle-right-down {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -772,7 +796,7 @@ iframe {
   height: 48px;
   z-index: 3;
 }
-.categories-item .categories-item__title {
+.category-section .categories-item .categories-item__title {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -784,27 +808,27 @@ iframe {
   line-height: 1.0;
   z-index: 2;
 }
-.categories-item__image {
+.category-section .categories-item__image {
   position: absolute;
   top: 20px;
   z-index: 1;
 }
-.categories-item__image img {
+.category-section .categories-item__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.categories-item-square .categories-item__image {
+.category-section .categories-item-square .categories-item__image {
   left: 0;
   width: 254px;
   height: 216px;
 }
-.categories-item-wide .categories-item__image {
+.category-section .categories-item-wide .categories-item__image {
   right: 0;
   width: 410px;
   height: 300px;
 }
-.categories-item .full-link {
+.category-section .categories-item .full-link {
   z-index: 4;
 }
 
@@ -868,7 +892,10 @@ iframe {
   text-decoration: underline;
 }
 
+/* News page */
+.news-page {
 
+}
 
 
 
