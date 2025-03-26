@@ -958,23 +958,23 @@ iframe {
   color: var(--blue-color);
 }
 
-/* News detail page */
-.news-detail-page .news-detail-title {
+/* NE dateil page News detail and Events detail pages */
+.ne-detail-page .ne-detail-title {
   margin: 0 0 30px 0;
   font-family: 'roboto-medium';
   font-size: 28px;
   line-height: 1.2;
 }
-.news-detail-page .news-detail-image {
+.ne-detail-page .ne-detail-image {
   width: 600px;
   margin: 0 0 40px 0;
   border-radius: 30px;
   overflow: hidden;
 }
-.news-detail-page .news-detail-image img {
+.ne-detail-page .ne-detail-image img {
   width: 100%;
 }
-.news-detail-page .news-detail-desciption {
+.ne-detail-page .ne-detail-desciption {
   font-size: 20px;
 }
 
