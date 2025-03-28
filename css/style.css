@@ -1459,75 +1459,77 @@ iframe {
   background: linear-gradient(360deg, #FFF 15%, rgba(255, 255, 255, 0.00) 60%);
   z-index: 1;
 }
-.about-page .contacts-section .contacts {
+
+/* Contacts section About and Contacts pages */
+.contacts-section .contacts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.about-page .contacts-section .contacts-item {
+.contacts-section .contacts-item {
   padding: 40px;
   border-radius: 20px;
   overflow: hidden;
 }
-.about-page .contacts-section .contacts {
+.contacts-section .contacts {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(2, 1fr);
 }
-.about-page .contacts-section .contacts-item {
+.contacts-section .contacts-item {
   position: relative;
   z-index: 1;
 }
-.about-page .contacts-section .contacts-item-left {
+.contacts-section .contacts-item-left {
   background-color: var(--blue-color);
 }
-.about-page .contacts-section .contacts-item-right {
+.contacts-section .contacts-item-right {
   background-color: var(--lightgrey-color);
 }
-.about-page .contacts-section .contacts-item__title {
+.contacts-section .contacts-item__title {
   margin: 0 0 65px 0;
   font-family: 'Roboto-Bold';
   font-size: 86px;
 }
-.about-page .contacts-section .contacts-item-left .contacts-item__title {
+.contacts-section .contacts-item-left .contacts-item__title {
   color: #F2F2F2;
 }
-.about-page .contacts-section .contacts-item-right .contacts-item__title {
+.contacts-section .contacts-item-right .contacts-item__title {
   color: var(--blue-color);
 }
-.about-page .contacts-section .flex-container {
+.contacts-section .flex-container {
   display: flex;
   margin: 0 0 80px 0;
   gap: 24px;
   justify-content: space-between;
 }
-.about-page .contacts-section .ac-item__title {
+.contacts-section .ac-item__title {
   margin: 0 0 10px 0;
   font-family: 'Roboto-SemiBold';
   font-size: 32px;
 }
-.about-page .contacts-section .ac-item__text {
+.contacts-section .ac-item__text {
   margin: 0 0 10px 0;
   font-family: 'Roboto-Medium';
   font-size: 24px;
 }
-.about-page .contacts-section .contacts-item-left {
+.contacts-section .contacts-item-left {
   color: var(--white-color);
 }
-.about-page .contacts-section .working-time-title {
+.contacts-section .working-time-title {
   margin: 0 0 10px 0;
   font-family: 'Roboto-SemiBold';
   font-size: 32px;
 }
-.about-page .contacts-section .working-time-hours {
+.contacts-section .working-time-hours {
   margin: 0 0 20px 0;
   font-family: 'Roboto-Medium';
   font-size: 24px;
 }
-.about-page .contacts-section .working-time-days {
+.contacts-section .working-time-days {
   font-family: 'Roboto-Medium';
   font-size: 24px;
 }
-.about-page .contacts-section .contacts-item__ellipse {
+.contacts-section .contacts-item__ellipse {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1535,11 +1537,27 @@ iframe {
   height: 324px;
   z-index: -1;
 }
-.about-page .contacts-section .contacts-item__ellipse img {
+.contacts-section .contacts-item__ellipse img {
   width: 100%;
 }
+.contacts-section .map-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  font-family: 'Roboto-Medium';
+  font-size: 24px;
+  color: var(--white-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-
+/* Contacts page */
+.contacts-page .map-item {
+  height: 400px;
+  margin: 24px 0 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
 /* footer */
 .footer {

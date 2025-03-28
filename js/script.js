@@ -183,7 +183,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  // Показ карты Офис/Склад страница Контакты
+  const contactsPage = document.querySelector('.contacts-page');
 
+  if (contactsPage) {
+
+    const mapBtns = document.querySelectorAll('.map-btn');
+    const mapItems = document.querySelectorAll('.map-item');
+
+    for (let i = 0; i < mapBtns.length; i++) {
+      mapBtns[i].onclick = function() {
+        console.log(mapBtns[i]);
+        for (let j = 0; j < mapItems.length; j++) {
+          mapItems[j].classList.add('hidden');
+        }
+
+        mapItems[i].classList.remove('hidden');
+      }
+    }
+
+  }
 
 
 
