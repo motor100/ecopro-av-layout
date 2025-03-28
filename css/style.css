@@ -1559,6 +1559,204 @@ iframe {
   overflow: hidden;
 }
 
+/* Category page */
+.category-page .grid-container {
+  display: grid;
+  grid-template-columns: 306px 1fr;
+  gap: 0 24px;
+}
+.category-page .subcategories {
+  display: flex;
+  margin: 0 0 45px 0;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.category-page .subcategories .subcategories-item {
+  font-family: 'Roboto-Bold';
+  font-size: 18px;
+  color: #ADADAD;
+  transition: color .3s;
+}
+.category-page .subcategories .subcategories-item:hover {
+  color: var(--blue-color);
+}
+.category-page .products {
+  display: grid;
+  margin: 0 0 40px 0;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.category-page .products-item {
+  position: relative;
+  border: 1px solid #E5E9EB;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.category-page .products-item .products-item__image {
+  position: relative;
+  height: 0;
+  padding: 0 0 100%;
+}
+.category-page .products-item .products-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.category-page .products-item .products-item__link {
+  display: block;
+  z-index: 1;
+}
+.category-page .products-item .products-item__content {
+  padding: 20px 20px 30px;
+}
+.category-page .products-item .products-item__title {
+  display: -webkit-box;
+  height: 60px;
+  margin: 0 0 20px;
+  font-family: 'Roboto-Bold';
+  font-size: 18px;
+  color: #1e2a3c;
+  line-height: 1.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  transition: color .3s;
+}
+.category-page .products-item .products-item__price {
+  margin: 0 0 30px 0;
+  font-family: 'Roboto-SemiBold';
+  font-size: 24px;
+  color: var(--blue-color);
+}
+.category-page .products-item .products-btn {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--blue-color);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.category-page .products-item .products-btn .products-btn__text {
+  font-family: 'Roboto-Bold';
+  font-size: 18px;
+  color: var(--white-color);
+}
+.category-page .products-item .products-btn .products-btn__image {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+
+
+/* Filter */
+.filter .checkbox-group {
+  margin: 0 0 20px 0;
+}
+.filter .checkbox-group__title {
+  margin: 0 0 10px 0;
+  font-family: 'roboto-semibold';
+  font-size: 16px;
+}
+.filter .checkbox-label {
+  position: relative;
+  display: block;
+  width: max-content;
+  margin: 5px 0;
+  padding: 0 0 0 23px;
+  font-size: 16px;
+  color: var(--text-color);    
+  user-select: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.filter .checkbox-label .custom-checkbox-text {
+  font-family: 'roboto-bold';
+  transition: color .3s cubic-bezier(.4,0,.23,1);
+}
+.filter .checkbox-label:hover .custom-checkbox {
+  border-color: var(--text-color);
+}
+.filter .checkbox-label:hover .custom-checkbox-text {
+  color: var(--blue-color);
+}
+.filter .checkbox {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  margin: 0 !important;
+  opacity: 0;
+  z-index: -1;
+}
+.filter .custom-checkbox {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C8CDD4;
+  border-radius: 4px;
+  transition: border-color .2s cubic-bezier(.4,0,.23,1), background-color .2s cubic-bezier(.4,0,.23,1);
+}
+.filter .checkbox:checked+.custom-checkbox {
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+.filter .submit-btn {
+  display: flex;
+  width: 200px;
+  height: 45px;
+  margin: 40px 0 0 0;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--blue-color);
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  color: var(--white-color);
+  align-items: center;
+  justify-content: center;
+}
+.filter .clear-btn {
+  display: flex;
+  width: 200px;
+  height: 45px;
+  margin: 10px 0 0 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #F4F4F4;
+  font-size: 16px;
+  gap: 10px;
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  color: #ADADAD;
+  align-items: center;
+  justify-content: center;
+}
+.filter .clear-btn__svg {
+  width: 23px;
+}
+.filter .clear-btn__svg path {
+  stroke: #ADADAD;
+  transition: stroke .3s;
+}
+.filter.clear-btn:hover .clear-btn__svg path {
+  stroke: var(--blue-color);
+}  
+
+
+
+
+
 /* footer */
 .footer {
   padding: 60px 0 40px 0;
