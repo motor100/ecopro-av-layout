@@ -7,28 +7,30 @@ document.addEventListener("DOMContentLoaded", () => {
     topMenuItemLink[topMenuItemActive].classList.add('active');
   }
 
-  // Swiper slider
-  /*
-  const mainSlider = document.querySelector('.main-slider')
+  // News Swiper slider
+  const newsSlider = document.querySelector('.news-slider');
 
-  if (mainSlider) {
-    const slider = new Swiper('.main-slider', {
-      slidesPerView: 1,
+  if (newsSlider) {
+    const slider = new Swiper('.news-slider', {
       loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 5000,
-      },
+      slidesPerView: 'auto',
+      spaceBetween: 15,
+      autoplay: false,
     });
   }
-  */
+
+  // Events Swiper slider
+  const eventsSlider = document.querySelector('.events-slider');
+
+  if (eventsSlider) {
+    const slider = new Swiper('.events-slider', {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 15,
+      autoplay: false,
+    });
+  }
+
 
   // Current year
   const now = new Date();
