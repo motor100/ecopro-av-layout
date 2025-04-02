@@ -1910,11 +1910,9 @@ iframe {
   width: 100%;
 }
 .footer .socials {
-  flex-grow: 1;
-}
-.footer .socials {
   display: flex;
   gap: 16px;
+  flex-grow: 1;
   justify-content: flex-end;
 }
 .footer .socials .socials-item {
@@ -2246,22 +2244,17 @@ iframe {
   cursor: pointer;
 }
 
-
-
-
-
-
-
 /* burger menu */
 .burger-menu-wrapper {
   position: fixed;
-  top: 97px;
-  right: 15px;
+  top: 33px;
+  right: 12px;
   display: none;
   width: 46px;
   height: 46px;
-  padding: 7px;
-  background-color: #000;
+  padding: 7px 5px;
+  border-radius: 5px;
+  background-color: #fff;
   cursor: pointer;
   z-index: 10003;
   transition: background-color .5s;
@@ -2275,21 +2268,23 @@ iframe {
 .burger-menu-wrapper .span {
   content: "";
   position: absolute;
-  left: 0;
   display: block;
-  width: 100%;
+  width: 24px;
   height: 2px;
   border-radius: 3px;
-  background-color: #000;
+  background-color: var(--blue-color);
   transition: all .5s;
   }
 .burger-menu-wrapper .burger-menu:before {
+  left: 0;
   top: 6px;
 }
 .burger-menu-wrapper .span {
+  left: 10px;
   top: 15px;
 }
 .burger-menu-wrapper .burger-menu:after {
+  left: 0;
   top: 24px;
 }
 .burger-menu-wrapper.menu-is-open {
@@ -2312,12 +2307,12 @@ iframe {
 /* mobile menu */
 .mobile-menu {
   position: fixed;
-  top: 0;
+  top: 185px;
   left: 0;
   display: none;
   width: 100%;
   height: 100vh;
-  padding: 95px 30px 30px 30px;
+  padding: 30px 12px;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -2328,66 +2323,56 @@ iframe {
   opacity: 1;
   visibility: visible;
 }
-.mobile-menu .mobile-menu-logo {
-  width: 90px;
-  margin: 0 0 20px 0;
-}
-.mobile-menu .mobile-menu-logo img {
-  width: 100%;
-}
-.mobile-menu .working-time {
-  margin: 0 0 20px 0;
-  font-size: 14px;
-}
 .mobile-menu .menu {
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   padding: 0;
   list-style: none;
 }
 .mobile-menu .menu-item {
+  display: block;
   padding: 5px 0;
 }
 .mobile-menu .menu-item a {
-  font-family: 'Roboto-Medium';
-  color: #000;
+  font-size: 20px;
+  color: var(--text-color);
   text-decoration: none;
 }
-.mobile-menu .phone-wrapper {
+.mobile-menu .socials {
   display: flex;
-  margin: 0 0 20px 0;
-  align-items: center;
+  margin: 0 0 30px 0;
+  gap: 16px;
 }
-.mobile-menu .social-icons__link {
-  width: 38px;
-  height: 38px;
-  margin: 0 10px 0 0;
-}
-.mobile-menu .phone-text {
-  font-family: 'Roboto-Medium';
-  font-size: 16px;
-  color: #000;
-  text-decoration: underline;
-}
-.mobile-menu .feedback-text {
-  margin: 0 0 10px 0;
-}
-.mobile-menu .socials-icons {
+.mobile-menu .socials .socials-item {
   display: flex;
+  width: 62px;
+  height: 49px;
+  border: 1px solid var(--blue-color);
+  border-radius: 15px;
+  overflow: hidden;
   align-items: center;
+  justify-content: center;
+}
+.mobile-menu .socials .socials-item img {
+  height: 19px;
+}
+.mobile-menu .address-wrapper {
+  font-family: 'Roboto-SemiBold';
+  font-size: 20px;
 }
 
 /* fixed bottom menu */
 .fixed-bottom-menu {
   position: fixed;
   left: 0;
-  bottom: 55px;
+  right: 0;
+  bottom: 0;
   display: none;
   width: 100%;
-  height: 100px;
+  height: 90px;
   padding: 15px 10px;
   border-radius: 30px 30px 0 0;
   background-color: #fff;
-  box-shadow: 0px 0px 20px rgba(255, 87, 51, 0.10);
+  box-shadow: 0px 0px 20px 0px rgba(54, 54, 54, 0.20);
   z-index: 12;
 }
 .fixed-bottom-menu .menu-wrapper {
@@ -3347,7 +3332,7 @@ iframe {
 
   /* Callback dealer section */
   .callback-dealer-section .callback-dealer {
-    height: 565px;
+    padding: 25px 25px 85px 25px;
   }
   .callback-dealer-section .callback-dealer-form .form-flex-container {
     display: block;
@@ -3383,6 +3368,34 @@ iframe {
     width: 80%;
   }
 
+  /* footer */
+  .footer {
+    padding: 40px 0 20px 0;
+  }
+  .footer .footer-menu {
+    flex-wrap: wrap;
+  }
+  .footer .footer-menu .address-wrapper {
+    text-align: left;
+  }
+  .footer .footer-menu .menu {
+    width: 32%;
+    margin: 0 0 20px 0;
+  }
+  .footer .footer-text {
+    padding-bottom: 20px;
+  }
+
+  /* burger menu */
+  .burger-menu-wrapper {
+    display: block;
+  }
+
+  /* mobile menu */
+  .mobile-menu {
+    display: block;
+  }
+
 
   /* we use cookie */
   .we-use-cookie .we-use-cookie-wrapper {
@@ -3396,6 +3409,33 @@ iframe {
 
 @media only screen and (max-width : 576px) {
 
+  .page-title,
+  .section-title {
+    font-size: 36px;
+  }
+
+  /* Main section */
+  .main-section .main-banner {
+    padding: 20px 25px;
+  }
+  .main-section .main-banner-title {
+    font-size: 28px;
+  }
+
+  /* About section */
+  .about-section .about-description {
+    font-size: 20px;
+  }
+
+  /* Callback dealer section */
+  .callback-dealer-section .callback-dealer {
+    padding: 25px 20px 85px 20px;
+  }
+  .callback-dealer-section .callback-dealer-form .callback-dealer-btn {
+    left: 20px;
+    right: 20px;
+  }
+
   /* News section Home page and News page */
   .news-section .news-section-slider {
     margin-left: 12px;
@@ -3405,10 +3445,94 @@ iframe {
   .events-section .events-section-slider {
     margin-left: 12px;
   }
+  .events-section .events-item {
+    height: 350px;
+  }
+
+  /* footer */
+  .footer .flex-container {
+    display: block;
+  }
+  .footer .logo {
+    margin: 0 0 30px 0;
+  }
+  .footer .socials {
+    justify-content: flex-start;
+  }
+  .footer .socials .socials-item {
+    width: 60px;
+    height: 37px;
+  }
+  .footer .socials .socials-item img {
+    height: 14px;
+  }
+  .footer .footer-bottom {
+    display: block;
+  }
+  .footer .developers {
+    text-align: left;
+  }
+  .footer .footer-menu .menu {
+    width: 49%;
+  }
+  .footer .footer-menu .menu-last {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width : 480px) {
- 
+
+  :root {
+    --margin-120: 30px;
+  }
+
+  .page-title,
+  .section-title {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  /* Main section */
+  .main-section .main-banner-text {
+    width: 100%;
+  }
+  .main-section .main-banner-title {
+    font-size: 24px;
+  }
+
+  /* About section */
+  .about-section .about-description {
+    font-size: 18px;
+  }
+  .about-section .about-info .about-rectangle {
+    height: 150px;
+  }
+  .about-section .about-btn .about-btn__text {
+    font-size: 18px;
+  }
+  
+  /* Category section Categories Home page and Catalog page */
+  .category-section .categories-item {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Brands section */
+  .brands-section .brands-item {
+    width: 45%;
+  }
+
+  /* Complex solutions section */
+  .complex-solutions-section .solutions-item {
+    height: 240px;
+  }
+
+  /* footer */
+  .footer .footer-text .required-links .link {
+    width: auto;
+  }
+
 
   /* we use cookie */
   .we-use-cookie {
@@ -3424,4 +3548,64 @@ iframe {
 
 @media only screen and (max-width : 360px) {
 
+  .page-title,
+  .section-title {
+    font-size: 28px;
+  }
+
+  /* About section */
+  .about-section .about-info {
+    display: block;
+  }
+  .about-section .about-info .about-rectangle {
+    height: 100px;
+    margin: 0 0 10px 0;
+  }
+  .about-section .about-info .about-rectangle .about-rectangle__number {
+    font-size: 24px;
+  }
+  .about-section .about-info .about-rectangle .about-rectangle__title {
+    font-size: 16px;
+  }
+
+  /* Category section Categories Home page and Catalog page */
+  .category-section .categories-item {
+    height: 180px;
+  }
+
+  /* Complex solutions section */
+  .complex-solutions-section .solutions-item {
+    height: 220px;
+  }
+
+  /* Brands section */
+  .brands-section .brands {
+    padding: 20px 10px;
+  }
+
+  /* Callback dealer section */
+  .callback-dealer-section .callback-dealer {
+    padding: 25px 15px 85px 15px;
+  }
+  .callback-dealer-section .callback-dealer-form .callback-dealer-btn {
+    padding: 0 30px;
+  }
+
+  /* footer */
+  .footer .footer-menu .address-wrapper .phone,
+  .footer .footer-menu .address-wrapper .address {
+    font-size: 18px;
+  }
+  .footer .footer-text {
+    padding: 0;
+  }
+  .footer .footer-text .text {
+    font-size: 14px;
+  }
+  .footer .footer-text .required-links .link {
+    font-size: 14px;
+  }
+  .footer .footer-bottom {
+    font-size: 14px;
+  }
 }
