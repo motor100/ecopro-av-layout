@@ -54,7 +54,6 @@ body {
   line-height: 1.4;
   font-weight: 400;
   overflow-x: hidden;
-/*  scroll-behavior: smooth;*/
 }
 * {
   box-sizing: border-box;
@@ -879,7 +878,7 @@ iframe {
 .category-section .item12 { grid-area: M; }
 */
 
-/* Manufacturers page */
+/* manufacturers page */
 .manufacturers-page .manufacturers {
   display: grid;
   gap: 24px;
@@ -912,8 +911,7 @@ iframe {
   text-decoration: underline;
 }
 
-
-/* Pagination pager */
+/* pagination pager */
 .pager {
   display: flex;
   margin: 60px 0;
@@ -983,13 +981,17 @@ iframe {
   line-height: 1.2;
 }
 .ne-detail-page .ne-detail-image {
+  position: relative;
   width: 600px;
+  height: 380px;
   margin: 0 0 40px 0;
   border-radius: 30px;
   overflow: hidden;
 }
 .ne-detail-page .ne-detail-image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .ne-detail-page .ne-detail-desciption {
   font-size: 20px;
@@ -1015,6 +1017,9 @@ iframe {
   border-radius: 30px;
   overflow: hidden;
   flex-shrink: 0;
+}
+.ep-page .ep-item .ep-item__image {
+  height: 100%;
 }
 .ep-page .ep-item .ep-item__image img {
   width: 100%;
@@ -1089,6 +1094,7 @@ iframe {
   width: 21px;
   height: 21px;
   background: url(../images/events-clock.png) center no-repeat;
+  background-size: cover;
 }
 .ep-page .ep-item .ep-item__content {
   position: relative;
@@ -1185,7 +1191,7 @@ iframe {
   border: 1px solid var(--blue-color);
   border-radius: 30px;
   background-color: var(--lightgrey-color);
-  gap: 24px;
+  gap: 16px;
   justify-content: space-between;
 }
 .expertise-page .experts-section .experts-item {
@@ -1996,7 +2002,7 @@ iframe {
   color: var(--white-color);
 }
 
-/* Breadscrumbs */
+/* breadscrumbs */
 .breadcrumbs {
   margin: 30px 0;
   font-size: 18px;
@@ -2013,9 +2019,8 @@ iframe {
   color: #B4B4B4;
 }
 
-
-
 /* to top */
+/*
 .to-top {
   position: fixed;
   left: 0;
@@ -2050,7 +2055,7 @@ iframe {
   height: 100%;
   object-fit: contain;
 }
-
+*/
 
 /* modal */
 .modal-window {
@@ -2430,15 +2435,6 @@ iframe {
   right: 5px;
 }
 
-
-
-
-
-
-
-
-
-
 .container {
   width: 100%;
   margin-right: auto;
@@ -2549,6 +2545,56 @@ iframe {
   .footer .socials .socials-item {
     width: 80px;
     height: 49px;
+  }
+
+  /* Manufacturers page */
+  .manufacturers-page .manufacturers-item {
+    padding: 50px;
+  }
+
+  /* Expertise page */
+  .expertise-page .title-section .expertise-subtitle {
+    font-size: 40px;
+  }
+  .expertise-page .title-section .expertise-description {
+    font-size: 22px;
+  }
+  .expertise-page .experts-section .experts {
+    padding: 50px;
+  }
+  .expertise-page .experts-section .experts-item__title {
+    font-size: 30px;
+  }
+  .expertise-page .experts-section .experts-item__description {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  /* About page */
+  .about-page .columns-section .column-item__title {
+    font-size: 64px;
+  }
+  .about-page .columns-section .column-item__text {
+    height: 70px;
+    font-size: 19px;
+  }
+  .about-page .columns-section .company-name {
+    font-size: 60px;
+  }
+  .about-page .columns-section .company-description {
+    font-size: 38px;
+  }
+  .about-page .numbers-section .numbers-item__title {
+    font-size: 68px;
+  }
+  .about-page .history-section .history-item__year {
+    font-size: 68px;
+  }
+  .about-page .faces-section .faces-item__name {
+    font-size: 38px;
+  }
+  .contacts-section .contacts-item__title {
+    font-size: 82px;
   }
 }
 
@@ -2779,6 +2825,131 @@ iframe {
     font-size: 16px;
   }
 
+  /* Manufacturers page */
+  .manufacturers-page .manufacturers-item {
+    padding: 40px;
+  }
+  .manufacturers-page .manufacturers-item__text {
+    font-size: 18px;
+  }
+
+  /* Pagination pager */
+  .pager .pager-item-previous,
+  .pager .pager-item-next {
+    width: 163px;
+    height: 65px;
+    border-radius: 15px
+  }
+  .pager .pager-item-previous .pager-item-link,
+  .pager .pager-item-next .pager-item-link {
+    padding: 15px 0;
+    font-size: 22px;
+  }
+  .pager .pager-item-link, .pager .pager-item-span {
+    font-size: 22px;
+  }
+
+  /* NE dateil page News detail and Events detail pages */
+  .ne-detail-page .ne-detail-title {
+    font-size: 26px;
+  }
+  .ne-detail-page .ne-detail-image {
+    width: 500px;
+    height: 317px;
+    margin: 0 0 30px 0;
+    border-radius: 20px;
+  }
+  .ne-detail-page .ne-detail-desciption {
+    font-size: 18px;
+  }
+
+  /* EP page Events and Publications pages */
+  .ep-page .ep-item {
+    height: 510px;
+    border-radius: 25px;
+  }
+  .ep-page .ep-item .ep-item-image-wrapper {
+    border-radius: 25px;
+  }
+  .ep-page .ep-item .ep-item__content {
+    padding: 25px;
+  }
+  .ep-page .ep-item .ep-item__title {
+    height: 53px;
+    font-size: 22px;
+  }
+  .ep-page .ep-item .ep-item-detail-btn {
+    height: 60px;
+  }
+  .ep-page .ep-item .ep-item-detail-btn .ep-item-detail-btn__text {
+    font-size: 18px;
+  }
+
+  /* About page */
+  .about-page .columns-section .company-name {
+    font-size: 56px;
+  }
+  .about-page .columns-section .company-description {
+    font-size: 34px;
+  }
+  .about-page .columns-section .column-item__title {
+    font-size: 52px;
+  }
+  .about-page .columns-section .column-item {
+    padding: 30px 20px;
+  }
+  .about-page .columns-section .column-item__text {
+    font-size: 18px;
+  }
+  .about-page .directions-section .directions-item__title {
+    font-size: 24px;
+  }
+  .about-page .directions-section .directions-item__description {
+    font-size: 17px;
+  }
+  .about-page .numbers-section .numbers-item {
+    padding: 40px;
+  }
+  .about-page .numbers-section .numbers-item__title {
+    font-size: 64px;
+  }
+  .about-page .numbers-section .numbers-item__text {
+    font-size: 28px;
+  }
+  .about-page .history-section .history-item__year {
+    font-size: 64px;
+  }
+  .about-page .history-section .history-item__text {
+    font-size: 18px;
+  }
+  .about-page .faces-section .faces-item__name {
+    font-size: 34px;
+  }
+  .about-page .faces-section .faces-item__position {
+    font-size: 18px;
+  }
+  .contacts-section .contacts-item__title {
+    font-size: 78px;
+  }
+  .contacts-section .ac-item__title {
+    font-size: 28px;
+  }
+  .contacts-section .ac-item__text {
+    font-size: 22px;
+  }
+  .contacts-section .working-time-title {
+    font-size: 28px;
+  }
+  .contacts-section .working-time-hours {
+    font-size: 22px;
+  }
+  .contacts-section .working-time-days {
+    font-size: 22px;
+  }
+  .contacts-section .map-btn {
+    font-size: 22px;
+  }
+
 }
 
 @media only screen and (max-width : 1200px) {
@@ -2816,7 +2987,7 @@ iframe {
     width: 50px;
     height: 50px;
   }
-   .header .header-contacts .tp-item {
+  .header .header-contacts .tp-item {
     width: 50px;
     height: 50px;
   }
@@ -2923,7 +3094,7 @@ iframe {
   .complex-solutions-section .solutions-item .solutions-item__description {
     font-size: 16px;
   }
-   .complex-solutions-section .solutions-item {
+  .complex-solutions-section .solutions-item {
     padding: 25px 20px;
     border-radius: 20px;
   }
@@ -2955,7 +3126,6 @@ iframe {
   .callback-dealer-section .callback-dealer-form .form-flex-container {
     gap: 12px;
   }
-
 
   /* agreement text галочка соглашения */
   .agreement-text .custom-checkbox + label::before {
@@ -3040,8 +3210,177 @@ iframe {
     font-size: 18px;
   }
 
+  /* manufacturers page */
+  .manufacturers-page .manufacturers-item {
+    padding: 30px;
+  }
+  .manufacturers-page .manufacturers {
+    gap: 16px;
+  }
 
-  /* We use cookie */
+  /* NE dateil page News detail and Events detail pages */
+  .ne-detail-page .ne-detail-title {
+    font-size: 24px;
+  }
+
+  /* EP page Events and Publications pages */
+  .ep-page .ep-item {
+    height: 490px;
+  }
+  .ep-page .ep-item .ep-item__content {
+    padding: 20px;
+  }
+  .ep-page .ep-item .ep-item__title {
+    height: 48px;
+    font-size: 20px;
+  }
+  .ep-page .ep-item .ep-item__date {
+    top: 25px;
+    left: 25px;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .ep-page .ep-item .ep-item__date::before {
+    width: 10px;
+    height: 10px;
+  }
+  .ep-page .ep-item .ep-item__type {
+    top: 25px;
+    right: 25px;
+    width: 95px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .ep-page .ep-item .ep-item__type::before {
+    width: 10px;
+    height: 10px;
+  }
+  .ep-page .ep-item .ep-item__time {
+    bottom: 25px;
+    right: 25px;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .ep-page .ep-item .ep-item__description {
+    height: 39px;
+    font-size: 16px;
+  }
+
+  /* Expertise page */
+  .expertise-page .title-section .expertise-subtitle {
+    font-size: 36px;
+  }
+  .expertise-page .title-section .expertise-description {
+    font-size: 20px;
+  }
+  .expertise-page .experts-section .experts {
+    padding: 40px;
+  }
+  .expertise-page .experts-section .experts-item__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .expertise-page .experts-section .experts-item__description {
+    font-size: 16px;
+  }
+  .expertise-page .experts-section .experts-item {
+    width: 32%;
+  }
+
+  /* About page */
+  .about-page .columns-section .company-name {
+    font-size: 52px;
+  }
+  .about-page .columns-section .company-description {
+    font-size: 30px;
+  }
+  .about-page .columns-section .column-item {
+    padding: 20px 15px;
+  }
+  .about-page .columns-section .column-item__title {
+    font-size: 48px;
+  }
+  .about-page .columns-section .column-item__text {
+    font-size: 16px;
+  }
+  .about-page .directions-section .directions {
+    gap: 16px;
+  }
+  .about-page .directions-section .directions-image-wrapper {
+    height: 540px;
+    margin: 0 0 15px 0;
+  }
+  .about-page .directions-section .directions-item__title {
+    font-size: 22px;
+  }
+  .about-page .directions-section .directions-item__description {
+    font-size: 16px;
+  }
+  .about-page .numbers-section .numbers {
+    gap: 16px;
+  }
+  .about-page .numbers-section .numbers-item {
+    padding: 30px;
+  }
+  .about-page .numbers-section .numbers-item__title {
+    font-size: 50px;
+  }
+  .about-page .numbers-section .numbers-item__text {
+    font-size: 24px;
+  }
+  .about-page .history-section .history-item__year {
+    font-size: 60px;
+  }
+  .about-page .faces-section .faces-item {
+    height: 580px;
+  }
+  .about-page .faces-section .faces-item__name {
+    font-size: 30px;
+  }
+  .about-page .faces-section .faces-item__name {
+    left: 25px;
+  }
+  .about-page .faces-section .faces-item__position {
+    left: 25px;
+  }
+  .contacts-section .contacts {
+    gap: 16px;
+  }
+  .contacts-section .contacts-item {
+    padding: 30px;
+  }
+  .contacts-section .contacts-item__title {
+    font-size: 70px;
+  }
+  .contacts-section .contacts-item__title {
+    margin: 0 0 45px 0;
+  }
+  .contacts-section .ac-item__title {
+    font-size: 24px;
+  }
+  .contacts-section .ac-item__text {
+    font-size: 18px;
+  }
+  .contacts-section .working-time-title {
+    font-size: 24px;
+  }
+  .contacts-section .working-time-hours {
+    font-size: 18px;
+  }
+  .contacts-section .working-time-days {
+    font-size: 18px;
+  }
+  .contacts-section .map-btn {
+    font-size: 18px;
+  }
+
+
+  /* we use cookie */
   .we-use-cookie .we-use-cookie-wrapper {
     padding: 22px;
   }
@@ -3251,11 +3590,146 @@ iframe {
     margin-left: 0;
   }
 
+  /* manufacturers page */
+  .manufacturers-page .manufacturers-item {
+    padding: 20px;
+  }
+  .manufacturers-page .manufacturers-item__text {
+    font-size: 16px;
+  }
+  .manufacturers-page .manufacturers-item__link {
+    font-size: 15px;
+  }
+  .manufacturers-page .manufacturers-item__logo {
+    idth: 120px;
+    height: 67px;
+  }
+
+  /* pagination pager */
+  .pager .pager-item-previous,
+  .pager .pager-item-next {
+    width: 138px;
+    height: 55px;
+  }
+  .pager .pager-item-previous .pager-item-link,
+  .pager .pager-item-next .pager-item-link {
+    padding: 12px 0;
+    font-size: 20px;
+  }
+  .pager .pager-item-link, .pager .pager-item-span {
+    font-size: 20px;
+  }
+
+  /* NE dateil page News detail and Events detail pages */
+  .ne-detail-page .ne-detail-title {
+    font-size: 22px;
+  }
+  .ne-detail-page .ne-detail-image {
+    width: 400px;
+    height: 254px;
+    border-radius: 15px;
+  }
+  .ne-detail-page .ne-detail-desciption {
+    font-size: 16px;
+  }
+
+  /* EP page Events and Publications pages */
+  .ep-page .ep {
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ep-page .ep-item {
+    height: 450px;
+    border-radius: 20px;
+  }
+  .ep-page .ep-item .ep-item-image-wrapper {
+    border-radius: 20px;
+  }
+  .ep-page .ep-item .ep-item__content {
+    padding: 15px;
+  }
+  .ep-page .ep-item .ep-item__date {
+    top: 20px;
+    left: 20px;
+    width: 110px;
+    height: 30px;
+  }
+  .ep-page .ep-item .ep-item__type {
+    top: 20px;
+    right: 20px;
+    width: 85px;
+    height: 30px;
+  }
+  .ep-page .ep-item .ep-item__time {
+    bottom: 20px;
+    right: 20px;
+    width: 110px;
+    height: 30px;
+  }
+  .ep-page .ep-item .ep-item__time::before {
+    width: 16px;
+    height: 16px;
+  }
+  .ep-page .ep-item .ep-item__title {
+    height: 44px;
+    font-size: 18px;
+  }
+  .ep-page .ep-item .ep-item-detail-btn {
+    bottom: 20px;
+    left: 20px;
+    height: 50px;
+  }
+  .ep-page .ep-item .ep-item-detail-btn .ep-item-detail-btn__text {
+    font-size: 16px;
+  }
+  .ep-page .ep-item .ep-item-detail-btn .ep-item-detail-btn__image {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Expertise page */
+  .expertise-page .title-section .flex-container {
+    flex-direction: column;
+  }
+  .expertise-page .title-section .expertise-subtitle {
+    font-size: 32px;
+  }
+  .expertise-page .title-section .expertise-description {
+    font-size: 18px;
+  }
+  .expertise-page .title-section .title-wrapper {
+    width: 100%;
+  }
+  .expertise-page .title-section .expertise-image {
+    width: 60%;
+    border-radius: 20px;
+  }
+  .expertise-page .experts-section .experts {
+    padding: 30px;
+  }
+  .expertise-page .experts-section .experts-item__title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .expertise-page .advantages-section .advantages-item {
+    width: 28%;
+  }
+  .expertise-page .advantages-section .advantages-item__title {
+    font-size: 16px;
+  }
+  .expertise-page .advantages-section .advantages-item__image {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 15px;
+  }
+
 
   /* to top */
+  /*
   .to-top {
     display: none;
   }
+  */
 
 }
 
@@ -3370,7 +3844,10 @@ iframe {
 
   /* footer */
   .footer {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 120px 0;
+  }
+  .footer .socials .socials-item img {
+    height: 14px;
   }
   .footer .footer-menu {
     flex-wrap: wrap;
@@ -3396,6 +3873,67 @@ iframe {
     display: block;
   }
 
+  /* breadscrumbs */
+  .breadcrumbs {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+  }
+
+  /* manufacturers page */
+  .manufacturers-page .manufacturers {
+    grid-template-columns: auto;
+  }
+  .manufacturers-page .manufacturers-item {
+    border-radius: 20px;
+  }
+
+  /* news page */
+  .news-page .news-section .news {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* pagination pager */
+  .pager {
+    justify-content: center;
+  }
+  .pager .pager-item-previous,
+  .pager .pager-item-next {
+    width: 113px;
+    height: 45px;
+  }
+  .pager .pager-item-previous .pager-item-link,
+  .pager .pager-item-next .pager-item-link {
+    padding: 9px 0;
+    font-size: 18px;
+  }
+  .pager .pager-item-link,
+  .pager .pager-item-span {
+    font-size: 18px;
+  }
+
+  /* EP page Events and Publications pages */
+  .ep-page .ep-item .ep-item-detail-btn {
+    width: 170px;
+    height: 45px;
+  }
+
+  /* Expertise page */
+  .expertise-page .experts-section .experts {
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+  .expertise-page .experts-section .experts-item {
+    width: 100%;
+  }
+  .expertise-page .experts-section .experts-item__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .expertise-page .title-section .expertise-subtitle {
+    font-size: 28px;
+  }
+  
 
   /* we use cookie */
   .we-use-cookie .we-use-cookie-wrapper {
@@ -3463,9 +4001,6 @@ iframe {
     width: 60px;
     height: 37px;
   }
-  .footer .socials .socials-item img {
-    height: 14px;
-  }
   .footer .footer-bottom {
     display: block;
   }
@@ -3478,6 +4013,53 @@ iframe {
   .footer .footer-menu .menu-last {
     width: 100%;
   }
+
+  /* pagination pager */
+  .pager .pager-item-previous,
+  .pager .pager-item-next {
+    width: 96px;
+    height: 38px;
+  }
+  .pager .pager-item-previous .pager-item-link,
+  .pager .pager-item-next .pager-item-link {
+    padding: 7px 0;
+    font-size: 16px;
+  }
+  .pager .pager-item-link,
+  .pager .pager-item-span {
+    font-size: 16px;
+  }
+
+  /* EP page Events and Publications pages */
+  .ep-page .ep-item .ep-item__title {
+    height: 39px;
+    font-size: 16px;
+  }
+  .ep-page .ep-item {
+    height: 440px;
+  }
+  
+  /* Expertise page */
+  .expertise-page .title-section .expertise-subtitle {
+    font-size: 24px;
+  }
+  .expertise-page .title-section .expertise-description {
+    font-size: 16px;
+  }
+  .expertise-page .experts-section .experts {
+    padding: 15px;
+  }
+  .expertise-page .advantages-section .advantages {
+    gap: 16px;
+  }
+  .expertise-page .advantages-section .advantages-item {
+    width: 45%;
+  }
+  .expertise-page .advantages-section .advantages-item__image {
+    width: 66px;
+    height: 66px;
+  }
+
 
 }
 
@@ -3531,6 +4113,62 @@ iframe {
   /* footer */
   .footer .footer-text .required-links .link {
     width: auto;
+  }
+
+  /* breadscrumbs */
+  .breadcrumbs {
+    font-size: 14px;
+  }
+
+  /* news page */
+  .news-page .news-section .news {
+    grid-template-columns: auto;
+  }
+
+  /* pagination pager */
+  .pager .pager-item {
+    margin: auto 15px;
+  }
+
+  /* NE dateil page News detail and Events detail pages */
+  .ne-detail-page .ne-detail-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .ne-detail-page .ne-detail-image {
+    width: 100%;
+    height: 0;
+    margin-bottom: 20px;
+    padding: 0 0 63% 0;
+    border-radius: 10px;
+  }
+  .ne-detail-page .ne-detail-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* EP page Events and Publications pages */
+  .ep-page .ep {
+    grid-template-columns: auto;
+  }
+
+  /* Expertise page */
+  .expertise-page .title-section .expertise-subtitle {
+    font-size: 20px;
+  }
+  .expertise-page .title-section .expertise-image {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .expertise-page .experts-section .experts {
+    border-radius: 15px;
+  }
+  .expertise-page .advantages-section .advantages-item__title {
+    font-size: 14px;
+  }
+  .expertise-page .advantages-section .advantages-item {
+    width: 47%;
   }
 
 
@@ -3607,5 +4245,10 @@ iframe {
   }
   .footer .footer-bottom {
     font-size: 14px;
+  }
+
+  /* manufacturers page */
+  .manufacturers-page .manufacturers-item__text {
+    font-size: 15px;
   }
 }
