@@ -78,6 +78,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Filter menu
+  const filterMenuBtn = document.querySelector('#filter-menu-btn');
+  const filterMenu = document.querySelector('.filter-menu');
+  const filterMenuClose = document.querySelector('.filter-menu-close');
+
+  function openFilterMenu() {
+    body.classList.add('overflow-hidden');
+    filterMenu.classList.add('active');
+  }
+
+  function closeFilterMenu() {
+    body.classList.remove('overflow-hidden');
+    filterMenu.classList.remove('active');
+  }
+
+  if (filterMenuBtn) {
+    filterMenuBtn.onclick = openFilterMenu;
+    filterMenuClose.onclick = closeFilterMenu;
+  }
+
 
   // Окна
   const modalWindows = document.querySelectorAll('.modal-window');
