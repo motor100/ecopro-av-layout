@@ -29,12 +29,18 @@
           <img src="/images/temp-product-image1.jpg" alt="">
         </div>
         <div class="product-gallery">
-          <div class="product-gallery-item">
-            <img src="/images/temp-product-image1.jpg" alt="">
-          </div>
-          <div class="product-gallery-item">
-            <img src="/images/temp-product-image1.jpg" alt="">
-          </div>
+
+          <figure class="product-gallery-item">
+            <a href="/images/temp-product-image1.jpg" data-pswp-width="800" data-pswp-height="600" target="_blank">
+              <img src="/images/temp-product-image1.jpg" alt="">
+            </a>
+          </figure>
+          <figure class="product-gallery-item">
+            <a href="/images/temp-product-image1.jpg" data-pswp-width="800" data-pswp-height="600" target="_blank">
+              <img src="/images/temp-product-image1.jpg" alt="">
+            </a>
+          </figure>
+
         </div>
       </div>
 
@@ -65,6 +71,18 @@
           <p>Оцените презентации и корпоративный брендинг нового уровня. Эта видеостена Philips X-Line сделает любой контент ярче благодаря Pure Colour Pro, чтобы вы могли привлекать внимание аудитории в любых условиях использования.</p>
         </div>
 
+      </div>
+
+      <div class="product-price-wrapper">
+        <div class="product-price">
+          <span class="product-price__value">827 300</span>
+          <span class="product-price__currency">&nbsp;Р</span>
+        </div>
+        <div class="product-price-text">рекомендованная розничная цена</div>
+        <div class="product-price-btn">
+          <span class="product-price-btn__text">Запросить цену</span>
+          <img src="/images/circle-right-down.png" alt="">
+        </div>
       </div>
 
     </div>
@@ -313,6 +331,19 @@
 
 <script>
   const topMenuItemActive = 0;
+</script>
+
+<script type="module" src="/js/photoswipe-lightbox.esm.min.js"></script>
+<script type="module">
+  import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.min.js';
+  // Photoswipe
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.product-gallery',
+    children: 'a',
+    pswpModule: () => import('/js/photoswipe.esm.js'),
+    loop: true
+  });
+  lightbox.init();
 </script>
 
 <!--#include virtual="/parts/footer.html" -->
