@@ -204,7 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
   checkCookies();
 
 
-
   // Показ карты Офис/Склад страница Контакты
   const contactsPage = document.querySelector('.contacts-page');
 
@@ -226,6 +225,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  // Поиск товаров
+  const searchInput = document.querySelector('.search-input');
+  const searchClose = document.querySelector('.search-close');
 
+  if (searchInput) {
+    searchInput.oninput = function() {
+      if (searchInput.value.length > 1 && searchInput.value.length <= 200) {
+        searchClose.classList.add('active');
+      } else {
+        searchClose.classList.remove('active');
+      }
+    }
+
+    function searchResetForm() {
+      searchInput.value = '';
+      searchClose.classList.remove('active');
+    }
+
+    searchClose.onclick = searchResetForm;
+  }
 
 });

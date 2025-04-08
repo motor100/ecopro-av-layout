@@ -1,7 +1,87 @@
 <!--#include virtual="/parts/header.html" -->
 
-<div class="container">
-  <p>partnership стать партнером</p>
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="parent">
+      <a href="/">Главная</a>
+    </div>
+    <div class="separator">/</div>
+    <div class="active">Стать партнером</div>
+  </div>
+</div>
+
+<div class="partnership-page">
+  <div class="container">
+    <div class="page-title">Стать партнером</div>
+  </div>
+
+  <div class="description-section section">
+    <div class="container">
+      <p class="p">Мы, компания ES-AV, являемся лидером в сфере Аудио/Видео оборудования. Мы постоянно стремимся к инновациям и расширению горизонтов, и поэтому активно ищем стратегических партнеров, разделяющих наши ценности и видение будущего.</p>
+      <p class="p">Мы предлагаем доступ к новым рынкам, технологиям, ресурсам и т.д. Вместе мы сможем достичь большего!</p>
+      <p class="p">Узнайте больше о возможностях партнерства на нашем сайте или свяжитесь с нами по электронной почте.</p>
+    </div>
+  </div>
+
+  <div class="expr-section experts-section section">
+    <div class="container">
+      <div class="experts">
+        <div class="experts-item">
+          <div class="experts-item__title">680+ Специалистов</div>
+          <div class="experts-item__description">Сертифицированные специалисты ES-AV работают по всей России – они доступны для дилеров и их заказчиков как в Москве, так и далеко за ее пределами. Они участвуют в пресейле и продажах, генерации потребностей, инжиниринге</div>
+        </div>
+        <div class="experts-item">
+          <div class="experts-item__title">680+ Специалистов</div>
+          <div class="experts-item__description">Их опыт охватывает все этапы создания современных аудиовизуальных комплексов, от первоначальной консультации и разработки концепции до финальной настройки и ввода в эксплуатацию. Благодаря глубокому знанию оборудования и технологий, специалисты ES-AV способны предложить оптимальные решения, отвечающие самым высоким требованиям и бюджетным ограничениям.</div>
+        </div>
+        <div class="experts-item">
+          <div class="experts-item__title">680+ Специалистов</div>
+          <div class="experts-item__description">Важным аспектом их работы является поддержка дилеров. Они предоставляют им необходимые консультации, техническую документацию и обучение, что позволяет дилерам повысить свою компетентность и предлагать своим клиентам решения премиум-класса. Кроме того, специалисты ES-AV активно участвуют в маркетинговых мероприятиях.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callback-dealer-section section">
+    <div class="container">
+      <div class="callback-dealer">
+        <div class="section-title">Хотите стать партнером?</div>
+        <div class="flex-container">
+          <form class="callback-dealer-form">
+            <div class="callback-dealer__description">Пожалуйста, оставьте контакты, и мы обсудим с вами условия сотрудничества</div>
+            <div class="form-flex-container">
+              <div class="left">
+                <input type="text" name="name" class="input-field mb-20" placeholder="Имя*">
+                <input type="email" name="email" class="input-field mb-40" placeholder="Email*">
+                <button type="button" id="callback-dealer-btn" class="callback-dealer-btn">
+                  <span class="callback-dealer-btn__text">Отправить заявку</span>
+                  <img src="/images/circle-right.png" class="callback-dealer-btn__image" alt="">
+                </button>
+              </div>
+              <div class="right">
+                <input type="text" name="phone" class="input-field input-phone mb-20 js-input-phone-mask" placeholder="+7 (999) 999 99 99">
+                <input type="text" name="company-name" class="input-field mb-40" placeholder="Название компании*">
+                <div class="agreement-text">
+                  <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback-modal" checked required onchange="document.getElementById('callback-dealer-btn').disabled = !this.checked;">
+                  <label for="checkbox-read-callback-modal" class="custom-checkbox-label"></label>
+                  <span class="checkbox-text">Ознакомлен с <a href="/privacy-policy" class="privacy-policy-link" target="_blank">политикой конфиденциальности</a></span>
+                </div>
+                <div class="agreement-text">
+                  <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback-modal" checked required onchange="document.getElementById('callback-dealer-btn').disabled = !this.checked;">
+                  <label for="checkbox-agree-callback-modal" class="custom-checkbox-label"></label>
+                  <span class="checkbox-text">Согласен на <a href="/agreement" class="agreement-link" target="_blank">обработку персональных данных</a></span>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="callback-dealer-image">
+            <img src="/images/callback-dealer-image.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!--#include virtual="/parts/footer.html" -->
