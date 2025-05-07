@@ -5,14 +5,8 @@
         <img src="/images/logo-white.png" class="logo-img" alt="">
       </div>
       <div class="socials">
-        <a href="#" class="socials-item">
+        <a href="https://t.me/av_it_new" class="socials-item">
           <img src="/images/footer-telegram.svg" alt="">
-        </a>
-        <a href="#" class="socials-item">
-          <img src="/images/footer-vk.svg" alt="">
-        </a>
-        <a href="#" class="socials-item">
-          <img src="/images/footer-youtube.svg" alt="">
         </a>
       </div>
     </div>
@@ -36,8 +30,22 @@
         <a href="#" class="menu-item">Вакансии</a>
       </div>
       <div class="address-wrapper">
-        <div class="phone">+7 (999) 999 45 45</div>
-        <div class="address">г. Москва, улица, д.99</div>
+        <!-- <div class="phone">sales@es-av.ru</div> -->
+        <div class="news-subscribe">
+          <div class="news-subscribe-title">Подписаться на новости</div>
+          <form class="form">
+            <input type="email" name="email" class="input-field">
+            <div class="agreement-text">
+              <input type="checkbox" name="checkbox" class="custom-checkbox" id="news-subscribe-checkbox" checked onchange="document.getElementById('mhb-submit').disabled = !this.checked;">
+              <label for="news-subscribe-checkbox" class="custom-checkbox-label"></label>
+              <span>Я согласен с <a href="privacy-policy.html">политикой обработки данных</a></span>
+            </div>
+            <button type="button" class="news-subscribe-btn">
+              <span class="news-subscribe-btn__text">Подписаться</span>
+              <img src="/images/circle-right-down.png" class="news-subscribe-btn__image" alt="">
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <div class="footer-text">
@@ -45,7 +53,6 @@
       <div class="required-links">
         <a href="/privacy-policy.html" class="link">Политика конфиденциальности</a>
         <a href="/agreement.html" class="link">Согласие на обработку персональных данных</a>
-        <a href="#" class="link">Раскрытие обязательной информации</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -53,41 +60,9 @@
         <div class="copyright">Copyright © ES-AV</div>
         <div id="current-year"></div>
       </div>
-      <div class="developers">
-        <div class="developer">
-          <a href="https://mybutton.ru" target="_blank">Разработчик Студия Button</a>
-        </div>
-        <div class="developer">
-          <a href="https://nhfuture.ru/" target="_blank">Дизайн Andrewwebnh</a>
-        </div>
-      </div>
     </div>
   </div>
 </footer>
-
-<!-- to-top .up -->
-<!-- 
-<div class="fixed hidden-lg">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-11"></div>
-      <div class="col-md-1">
-        <div class="vertical-line"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="fixed hidden-lg">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-11"></div>
-      <div class="col-md-1">
-        <div class="up"></div>
-      </div>
-    </div>
-  </div>
-</div>
- -->
 
 <div class="burger-menu-wrapper">
   <div class="burger-menu">
@@ -125,8 +100,8 @@
       <li class="menu-item">
         <a href="/publications.html" class="menu-item__link">Публикации</a>
       </li>
-      <li class="menu-item" class="menu-item__link">
-        <a href="/download.html">Скачать</a>
+      <li class="menu-item">
+        <a href="/download.html" class="menu-item__link">Скачать</a>
       </li>
       <li class="menu-item">
         <a href="/expertise.html" class="menu-item__link">Экспертиза</a>
